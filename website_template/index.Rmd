@@ -1,33 +1,25 @@
 ---
-title: "Holy cow!"
+title: "Zach Keefer"
 ---
 
-### I have a webpage!
+<img src="images/Me_and_Obama_Peace_Corps.jpg" style="width:75%">
 
-And I can put all kinds of stuff on it!
+##About
+I am a second year graduate student at Columbia University, working towards my MPH in Infectious Disease Epidemiology.  I also work as an intern in the Zoonotic, Influenza, and Vector-Borne Disease Unit at the New York City Department of Health.
 
-I can add additional text.
+Formerly, I received a B.A. in history and economics from Brown University in 2009.  I am a Returned Peace Corps Volunteer, having served in Guyana from 2015-2017.  I also worked for the Office of Minority Health at the Rhode Island Department of Health.  
 
-COYS!
+##Contact
+Zach (George) Keefer
+New York, New York
 
-### Add some links
-
-I like [google](https://www.google.com/)
-
-I can link directly to my [about page](about.html)
-
-###A Picture!
-
-<img src="Images/mountain.png" style="width:75%">
+Email: [gwk2111@cumc.columbia.edu] (mailto:<gwk2111@cumc.columbai.edu>)
 
 
-###I can add code
 
-```{r}
-library(tidyverse)
-tibble(
-  x = 1:10,
-  y = x + 2
-)
-```
+
+
+
+
+
 
