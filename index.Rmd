@@ -4,7 +4,7 @@ title: "Zach Keefer"
 
 <center>
 
-<img src="images/Me_and_Obama_Peace_Corps.jpg" style="width:25%">
+<img src="images/mountain.png" style="width:25%">
 
 </center>
 
