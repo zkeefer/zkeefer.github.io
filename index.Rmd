@@ -2,7 +2,7 @@
 title: "Zach Keefer"
 ---
 
-<img src="images/Me_and_Obama_Peace_Corps.jpg" style="width:75%">
+<img src="images/Me_and_Obama_Peace_Corps.jpg" style="width:25%">
 
 ###About
 I am a second year graduate student at Columbia University, working towards my MPH in Infectious Disease Epidemiology.  I also work as an intern in the Zoonotic, Influenza, and Vector-Borne Disease Unit at the New York City Department of Health.
