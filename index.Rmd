@@ -2,7 +2,11 @@
 title: "Zach Keefer"
 ---
 
+<center>
+
 <img src="images/Me_and_Obama_Peace_Corps.jpg" style="width:25%">
+
+</center>
 
 ###About
 I am a second year graduate student at Columbia University, working towards my MPH in Infectious Disease Epidemiology.  I also work as an intern in the Zoonotic, Influenza, and Vector-Borne Disease Unit at the New York City Department of Health.
@@ -11,6 +15,7 @@ Formerly, I received a B.A. in history and economics from Brown University in 20
 
 ###Contact
 Zach (George) Keefer
+
 New York, New York
 
 Email: [gwk2111@cumc.columbia.edu](mailto:<gwk2111@cumc.columbia.edu>)
