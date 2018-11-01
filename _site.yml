@@ -4,7 +4,7 @@ navbar:
   title: "Home"
   left:
     - text: "Resume"
-      href: (Keefer_George_Resume.pdf)
+      href: Keefer_George_Resume.pdf
   right:
     - icon: fa-linkedin fa-lg
       href: https://www.linkedin.com/in/georgekeefer/
