@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "2000 NY Weather Data"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -14,49 +14,58 @@ library(viridis)
 library(p8105.datasets)
 
 library(plotly)
+library(lubridate)
 ```
 
 ```{r}
 set.seed(1)
 
-data(nyc_airbnb)
-nyc_airbnb = 
-  nyc_airbnb %>% 
-  mutate(rating = review_scores_location / 2) %>%
-  select(boro = neighbourhood_group, neighbourhood, rating, price, room_type,
-         latitude, longitude) %>%
-  filter(!is.na(rating), 
-         boro == "Manhattan",
-         room_type == "Entire home/apt",
-         price %in% 100:500)  %>% 
+ny_noaa = ny_noaa %>% 
+  janitor::clean_names() %>%
+  mutate(year = year(date),
+       month = month(date, label = TRUE),
+       day = lubridate::floor_date(date, unit = "day"),
+       prcp = prcp/10,
+       tmin = (as.numeric(tmin))/10,
+       tmax = (as.numeric(tmax))/10) %>%
+  filter(year == 2000) %>% 
   sample_n(5000)
+  
+  
+  
 ```
 
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Minimum Temperature by Maximum Temoerature, NY 2000
 
 ```{r}
-nyc_airbnb %>%
-  mutate(text_label = str_c("Price: $", price, '\nRating: ', rating)) %>% 
-  plot_ly(x = ~longitude, y = ~latitude, type = "scatter", mode = "markers",
+ny_noaa %>%
+  plot_ly(x = ~tmin, y = ~tmax, type = "scatter", mode = "markers",
           alpha = 0.5, 
-          color = ~price,
-          text = ~text_label)
+          color = ~month) %>% 
+  layout(xaxis = list(title = 'Minimum Temperature, C'),
+         yaxis = list(title = 'Maximum Temperature, C'))
 ```
 
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Distribution of Maximum Temperature by Month, NY 2000
 
 ```{r}
-
+ny_noaa %>% 
+  plot_ly(y = ~tmax, color = ~month, type = ~"box", colors = "Set2") %>% 
+  layout(yaxis = list(title = 'Maximum Temperature, C'))
 ```
 
-### Chart C
+### Total Snowfall Across State by Month, NY 2000
 
 ```{r}
-
+group_by(ny_noaa, month) %>% 
+  summarize(total_snow = sum(snow, na.rm = TRUE)) %>% 
+  plot_ly(y = ~total_snow, x = ~month, color = ~month, type = "bar") %>% 
+  layout(yaxis = list(title = 'Total Snowfall, mm'))
 ```
+
