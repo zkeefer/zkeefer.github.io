@@ -6,7 +6,7 @@ navbar:
     - text: "Resume"
       href: Keefer_George_Resume.pdf
     - text: "Dashboard"
-      href: flex_dashboard.html_document
+      href: flex_dashboard.html
   right:
     - icon: fa-linkedin fa-lg
       href: https://www.linkedin.com/in/georgekeefer/
