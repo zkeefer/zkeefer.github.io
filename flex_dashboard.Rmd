@@ -38,7 +38,7 @@ ny_noaa = ny_noaa %>%
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Minimum Temperature by Maximum Temoerature, NY 2000
+### Minimum Temperature by Maximum Temperature, NY 2000
 
 ```{r}
 ny_noaa %>%
