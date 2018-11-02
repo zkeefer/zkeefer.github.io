@@ -4,14 +4,16 @@ title: "Zach Keefer"
 
 <center>
 
-<img src="images/me_and_obama_peace_corps.jpg" style="width:25%">
+<img src="me_and_obama_peace_corps.jpg" style="width:25%">
 
 </center>
 
 ###About
-I am a second year graduate student at Columbia University, working towards my MPH in Infectious Disease Epidemiology.  I also work as an intern in the Zoonotic, Influenza, and Vector-Borne Disease Unit at the New York City Department of Health.
+I am a second year graduate student at Columbia University, working towards my MPH in Infectious Disease Epidemiology.  I also work as an intern in the Zoonotic, Influenza, and Vector Borne Disease Unit at the New York City Department of Health.
 
 Formerly, I received a B.A. in history and economics from Brown University in 2009.  I am a Returned Peace Corps Volunteer, having served in Guyana from 2015-2017.  I also worked for the Office of Minority Health at the Rhode Island Department of Health.  
+
+I am currently taking Data Science, and created this [dashboard](flex_dashboard.html) as part of my homework assignment.
 
 ###Contact
 Zach (George) Keefer
